@@ -6,7 +6,9 @@ import connectDB from './db/indexdb.js';
 import userRouter from './routes/user.routes.js';
 
 // Load env vars as early as possible
-dotenv.config();
+dotenv.config({
+  path: './.env'
+});
 
 // Debug: Check environment variables
 console.log('Environment variables:', {
